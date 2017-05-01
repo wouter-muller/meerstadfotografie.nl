@@ -21,7 +21,7 @@ $(function() {
 
   var previousButton = function() {
     $id = $id - 1;
-    console.log($id);
+
     $('.photo-fullscreen__photo').html("<img src='" + $id + ".jpg'>");
 
     $('.photo-fullscreen__previous').hide();
@@ -32,7 +32,7 @@ $(function() {
 
   var nextButton = function() {
     $id = $id + 1;
-    console.log($id);
+
     $('.photo-fullscreen__photo').html("<img src='" + $id + ".jpg'>");
 
     $('.photo-fullscreen__previous').hide();
