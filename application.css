@@ -25,6 +25,7 @@ a {
   float: left;
   overflow: hidden;
   position: relative;
+  background-color: darkgray;
 }
 
 .photo-thumbnail::after {
@@ -138,7 +139,7 @@ a {
   font-weight: 400;
   margin-left: 12px;
   display: inline-block;
-  letter-spacing: 14.4px;
+  letter-spacing: 14px;
   font-family: Roboto;
 }
 
