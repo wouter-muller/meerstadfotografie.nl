@@ -1,0 +1,11 @@
+// ----------------------------------------------------------------------------
+// Responsive utility that wraps and centers the website
+// ----------------------------------------------------------------------------
+
+.u-wrapper {
+  @include clear-float;
+  clear: both;
+  margin: 0 auto;
+  position: relative;
+  padding: 0 $gutter;
+}

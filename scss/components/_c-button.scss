@@ -1,0 +1,30 @@
+//----------------------------------------------------------
+// Button styles
+//----------------------------------------------------------
+
+.c-button {
+
+  // Button styles that should be applied to ALL buttons ------------------------
+  @include font-weight-bold;
+  border-radius: 0; // Needed for Safari Mobile, default there is rounded corners
+  border: 0;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+
+  &:hover {
+    text-decoration: none; // to override the text-decoration: underline default on a tags
+  }
+
+  // Required button modifiers that determine how a button looks (colors etc) --------------
+
+  &.primary {
+    background-color: $primary-cta-color;
+    color: $inverted-text-color;
+  }
+
+  &.secondary {
+    background-color: $secondary-cta-color;
+    color: $inverted-text-color;
+  }
+}

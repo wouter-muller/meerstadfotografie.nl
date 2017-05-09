@@ -1,0 +1,15 @@
+//----------------------------------------------------------
+// Reusable list styles
+//----------------------------------------------------------
+
+.c-list {
+
+  // List that is inline for tablet+desktop but not inline for mobile
+  &.inline {
+    li {
+      @include mq-medium-large {
+        display: inline-block;
+      }
+    }
+  }
+}

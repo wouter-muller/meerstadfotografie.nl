@@ -1,0 +1,21 @@
+.u-hide {
+  display: none !important;
+}
+
+.u-hide-s {
+  @include mq-small {
+    display: none !important;
+  }
+}
+
+.u-hide-m {
+  @include mq-medium {
+    display: none !important;
+  }
+}
+
+.u-hide-l {
+  @include mq-large {
+    display: none !important;
+  }
+}

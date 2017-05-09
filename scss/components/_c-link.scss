@@ -1,0 +1,10 @@
+.c-link {
+
+  &.primary {
+    @include link-primary;
+  }
+
+  &.underline {
+    @include link-underline;
+  }
+}

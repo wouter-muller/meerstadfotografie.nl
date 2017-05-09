@@ -1,0 +1,34 @@
+// --------------------------------------------------------
+// Main input field styles
+// --------------------------------------------------------
+
+.c-input {
+  @include font-size-m;
+  background-color: $main-bg-color;
+  border: 1px solid $main-border-color;
+  color: $main-text-color;
+  padding: 7px 9px 6px;
+  width: 100%;
+
+  //----------------------------------------------------------
+  // Search input with magnifying glass icon
+  //----------------------------------------------------------
+  &.search {
+    background-image: image-url('icons/search.svg');
+    background-position: 10px center;
+    background-repeat: no-repeat;
+    background-size: 20;
+    padding-left: 38;
+  }
+
+  //----------------------------------------------------------
+  // Standard select box
+  //----------------------------------------------------------
+  &.dropdown {
+    background-image: image-url('icons/dropdown.svg');
+    background-position: right 10px center;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    padding-right: 30px;
+  }
+}

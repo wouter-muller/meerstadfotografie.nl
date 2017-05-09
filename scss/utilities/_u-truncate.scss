@@ -1,0 +1,19 @@
+//----------------------------------------------------------
+// Truncate/ellipsis utility
+//
+// This only works if the respective element also has either
+// display: block or display: inline-block, and has a fixed
+// width or max-width. You need to set this on the other chained
+// class of the element, not here otherwise we couldn't
+// reuse it anywhere.
+//
+// Example:
+// .user-name.u-truncate
+//   %p Very long username that needs to be truncated
+//----------------------------------------------------------
+
+.u-truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

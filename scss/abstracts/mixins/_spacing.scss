@@ -1,0 +1,55 @@
+// ----------------------------------------------------------------------------
+// Margin bottom
+// ----------------------------------------------------------------------------
+
+@mixin margin-b {
+  margin-bottom: $gutter;
+}
+
+@mixin margin-b-double {
+  margin-bottom: ($gutter * 2);
+}
+
+@mixin margin-b-half {
+  margin-bottom: ($gutter / 2);
+}
+
+// ----------------------------------------------------------------------------
+// Vertical spacing
+// ----------------------------------------------------------------------------
+
+@mixin spacing-vertical {
+  padding: 50px 0;
+}
+
+@mixin spacing-vertical-double {
+  padding: 100px 0;
+}
+
+@mixin spacing-vertical-half {
+  padding: 25px 0;
+}
+
+@mixin spacing-vertical-gutter {
+  padding: $gutter 0;
+}
+
+// ----------------------------------------------------------------------------
+// Horizontal spacing
+// ----------------------------------------------------------------------------
+
+@mixin spacing-horizontal-gutter {
+  padding: 0 20px;
+}
+
+//----------------------------------------------------------
+// Horizontal AND vertical spacing
+//----------------------------------------------------------
+
+@mixin spacing-gutter {
+  padding: $gutter;
+}
+
+@mixin spacing-gutter-half {
+  padding: ($gutter / 2);
+}

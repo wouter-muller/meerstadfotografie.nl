@@ -1,0 +1,41 @@
+//----------------------------------------------------------
+// Creating readable variables
+//----------------------------------------------------------
+
+$black: #222;
+
+$blue: #255c85;
+$blue-light: #dff5fc;
+
+$orange: #ff7c2d;
+$orange-light: #ffefe6;
+
+$white: #fff;
+
+$gray-light: #f5f5f5;
+$gray: #a1a1a1;
+$gray-dark: #222;
+
+$green: #33c514;
+
+//----------------------------------------------------------
+// Global color variables
+//----------------------------------------------------------
+
+$main-text-color: $black;
+$main-bg-color: $white;
+$main-border-color: #dadada;
+$main-border-color-as-rgba: rgba(0, 0, 0, .145); // magic number :(
+$main-shadow-color: #9a9a9a;
+
+$primary-cta-color: $blue;
+$secondary-cta-color: $orange;
+
+$inverted-text-color: $white;
+$inverted-bg-color: $black;
+$inverted-border-color: $gray;
+
+$popup-hover-bg-color: $blue;
+$popup-hover-text-color: $white;
+
+$main-placeholder-color: #dadada;

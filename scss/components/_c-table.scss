@@ -1,0 +1,24 @@
+//----------------------------------------------------------
+// Table colors
+//----------------------------------------------------------
+
+$c-table__border-color: #ededed;
+
+//----------------------------------------------------------
+// This file contains all styles for tables
+//----------------------------------------------------------
+
+// Top level table tag styles, use with caution!
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+}
+
+th {
+  text-align: left;
+}
+
+td {
+  vertical-align: top;
+}

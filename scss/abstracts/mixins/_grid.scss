@@ -1,0 +1,32 @@
+// ----------------------------------------------------------------------------
+// Grid mixin
+// ----------------------------------------------------------------------------
+
+@mixin u-grid {
+  @include clear-float;
+  margin-left: -$grid-default-gutter;
+}
+
+// ----------------------------------------------------------------------------
+// Column mixin
+// ----------------------------------------------------------------------------
+
+@mixin u-col($columns, $max-columns, $gutter: $grid-default-gutter) {
+  float: left;
+  padding-left: $gutter;
+  position: relative;
+  width: ((100% / $max-columns) * $columns);
+  min-height: $px1; // to prevent empty columns from not having any dimensions
+}
+
+// ----------------------------------------------------------------------------
+// Move mixin
+// ----------------------------------------------------------------------------
+
+@mixin u-move($col-move, $max-columns, $gutter: $grid-default-gutter) {
+  $one-col: (100% / $max-columns);
+  $inverted-move: $max-columns - $col-move + 1;
+  left: 100%;
+  margin-left: -($one-col * $inverted-move);
+  position: relative;
+}

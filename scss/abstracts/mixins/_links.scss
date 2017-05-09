@@ -1,0 +1,14 @@
+//----------------------------------------------------------
+// Links utilities
+//
+// This file contains reusable classes that you can use for
+// links.
+//----------------------------------------------------------
+
+@mixin link-primary {
+  color: $primary-cta-color;
+}
+
+@mixin link-underline {
+  text-decoration: underline;
+}

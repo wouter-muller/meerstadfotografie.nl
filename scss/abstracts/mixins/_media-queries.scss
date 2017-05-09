@@ -1,0 +1,56 @@
+// ----------------------------------------------------------------------------
+// Mixin generally used for mobile devices
+// ----------------------------------------------------------------------------
+
+@mixin mq-small {
+  @media only screen and (max-width: $breakpoint-medium - 1) {
+    @content;
+  }
+}
+
+// ----------------------------------------------------------------------------
+// Mixin generally used for tablets
+// ----------------------------------------------------------------------------
+
+@mixin mq-medium {
+  @media only screen and (min-width: $breakpoint-medium) and (max-width: $breakpoint-large - 1) {
+    @content;
+  }
+}
+
+// ----------------------------------------------------------------------------
+// Mixin generally used for desktop
+// ----------------------------------------------------------------------------
+
+@mixin mq-large {
+  @media only screen and (min-width: $breakpoint-large)  {
+    @content;
+  }
+}
+
+// ----------------------------------------------------------------------------
+// Mixin generally used for mobile devices and tablets
+// ----------------------------------------------------------------------------
+
+@mixin mq-small-medium {
+  @media only screen and (max-width: $breakpoint-large - 1) {
+    @content;
+  }
+}
+
+// ----------------------------------------------------------------------------
+// Mixin generally used for tablets and desktop
+// ----------------------------------------------------------------------------
+
+@mixin mq-medium-large {
+  @media only screen and (min-width: $breakpoint-medium) {
+    @content;
+  }
+}
+
+
+@mixin mq-wide {
+  @media only screen and (min-width: $breakpoint-wide) {
+    @content;
+  }
+}

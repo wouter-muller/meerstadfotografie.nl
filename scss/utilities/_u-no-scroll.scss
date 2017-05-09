@@ -1,0 +1,12 @@
+//----------------------------------------------------------
+// No-scrolling utility
+//----------------------------------------------------------
+
+.u-no-scroll {
+  overflow-y: hidden;
+
+  @include mq-small {
+    position: fixed; // necessary for iOS
+  }
+}
+

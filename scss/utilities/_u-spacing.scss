@@ -1,0 +1,42 @@
+// ----------------------------------------------------------------------------
+// Vertical spacing utility helpers
+// ----------------------------------------------------------------------------
+
+
+.u-spacing-vertical {
+  @include spacing-vertical;
+}
+
+.u-spacing-vertical-double {
+  @include spacing-vertical-double;
+}
+
+.u-spacing-vertical-half {
+  @include spacing-vertical-half;
+}
+
+.u-spacing-vertical-gutter {
+  @include spacing-vertical-gutter;
+}
+
+
+
+// ----------------------------------------------------------------------------
+// Horizontal spacing utility helper
+// ----------------------------------------------------------------------------
+
+.u-spacing-horizontal-gutter {
+  @include spacing-horizontal-gutter;
+}
+
+//----------------------------------------------------------
+// Horizontal AND vertical spacing
+//----------------------------------------------------------
+
+.u-spacing-gutter {
+  @include spacing-gutter;
+}
+
+.u-spacing-gutter-half {
+  @include spacing-gutter-half;
+}

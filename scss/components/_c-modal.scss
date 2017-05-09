@@ -1,0 +1,70 @@
+//----------------------------------------------------------
+// Modal popup
+//
+// Example:
+// = link_to "Toggle modal", "#", class: "js-modal-hook"
+//
+// .c-modal.js-modal
+//   .c-modal__inner
+//     Contents of modal here
+//
+//     .c-modal__close.js-modal__close
+//----------------------------------------------------------
+
+.c-modal {
+  @include z-index(modal);
+  background-color: rgba($inverted-bg-color, .5);
+  display: none;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+
+  &.open {
+    display: block;
+  }
+
+  &.large {
+    .c-modal__inner {
+      @include mq-medium-large {
+        width: 90%;
+        max-width: none;
+        min-width: auto;
+      }
+    }
+  }
+}
+
+.c-modal__inner {
+  @include center;
+  background-color: $main-bg-color;
+  max-height: 90%;
+  overflow-y: auto;
+  padding: $gutter;
+
+  @include mq-small {
+    width: 90%;
+  }
+
+  @include mq-medium-large {
+    max-width: 500px;
+    min-width: 300px;
+  }
+
+  a {
+    color: $primary-cta-color;
+
+  }
+}
+
+.c-modal__close {
+  cursor: pointer;
+  height: 35px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 35px;
+}
+
+

@@ -1,0 +1,28 @@
+//----------------------------------------------------------
+// Image components
+//----------------------------------------------------------
+
+.c-img {
+
+  // This component is used to put an image (that can have
+  // different height/width), inside a box with a gray
+  // background. The width and height of the box can be set
+  // individually by putting a wrapper div around it, and give
+  // that a height. Width should be done by the grid. The
+  // component itself does not have a width/height so we can
+  // reuse it anywhere.
+
+  &.crop {
+    background-color: $gray-light;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    width: 100%;
+
+    img {
+      @include center;
+      width: 100%;
+    }
+  }
+}

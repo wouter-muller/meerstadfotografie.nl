@@ -1,0 +1,42 @@
+// ----------------------------------------------------------------------------
+// Preset font-sizes
+// ----------------------------------------------------------------------------
+.u-font-size-xxs {
+  @include font-size-xxs;
+}
+
+.u-font-size-xs {
+  @include font-size-xs;
+}
+
+.u-font-size-s {
+  @include font-size-s;
+}
+
+.u-font-size-m {
+  @include font-size-m;
+}
+
+.u-font-size-l {
+  @include font-size-l;
+}
+
+.u-font-size-xl {
+  @include font-size-xl;
+}
+
+.u-font-size-xxl {
+  @include font-size-xxl;
+}
+
+// ----------------------------------------------------------------------------
+// Font-weights
+// ----------------------------------------------------------------------------
+
+.u-font-weight-regular {
+  @include font-weight-regular;
+}
+
+.u-font-weight-bold {
+  @include font-weight-bold;
+}

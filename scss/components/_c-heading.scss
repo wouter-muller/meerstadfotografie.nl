@@ -1,0 +1,24 @@
+// ----------------------------------------------------------------------------
+// Headings styles
+//
+// Use these classes for headings, like %h1, %h2, %h3 etc. We don't put any
+// styles to these top-level tags cause that way they are loosely coupled, and
+// we can swap out for example an %h2 tag for an %h1 without altering its looks.
+// ----------------------------------------------------------------------------
+
+.c-heading {
+  @include font-weight-bold;
+  color: $blue;
+
+  &.large {
+    font-size: $px24
+  }
+
+  &.xl {
+    font-size: $px32;
+  }
+
+  &.xxl {
+    font-size: $px40;
+  }
+}

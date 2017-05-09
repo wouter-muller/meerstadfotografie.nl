@@ -1,0 +1,156 @@
+// ----------------------------------------------------------------------------
+// Setting preset grids
+// ----------------------------------------------------------------------------
+
+.u-grid {
+  @include clear-float;
+
+  @include mq-medium-large {
+    @include u-grid;
+  }
+}
+
+.u-grid-s {
+  @include mq-small {
+    @include u-grid;
+  }
+}
+
+// ----------------------------------------------------------------------------
+// Preset column classes for mobile (2 and 3 columns)
+// ----------------------------------------------------------------------------
+
+@include mq-small {
+  @for $i from 1 through 2 {
+    .u-col-#{$i}-2-s {
+      @include u-col($i, 2);
+    }
+
+    .u-move-#{$i}-2-s {
+      @include u-move($i, 2);
+    }
+  }
+
+  @for $i from 1 through 3 {
+    .u-col-#{$i}-3-s {
+      @include u-col($i, 3);
+    }
+
+    .u-move-#{$i}-3-s {
+      @include u-move($i, 3);
+    }
+  }
+
+  // Making sure the 3rd col in a 2-column layout starts on the left
+  .u-col-1-2-s:nth-child(2n+3) {
+    clear: left;
+  }
+}
+
+// ----------------------------------------------------------------------------
+// Preset column classes for desktop (9, 10 and 12 columns)
+// ----------------------------------------------------------------------------
+
+@include mq-medium-large {
+  @for $i from 1 through 9 {
+    .u-col-#{$i}-9 {
+      @include u-col($i, 9);
+    }
+
+    .u-move-#{$i}-9 {
+      @include u-move($i, 9);
+    }
+  }
+
+  @for $i from 1 through 10 {
+    .u-col-#{$i}-10 {
+      @include u-col($i, 10);
+    }
+
+    .u-move-#{$i}-10 {
+      @include u-move($i, 10);
+    }
+  }
+
+  @for $i from 1 through 12 {
+    .u-col-#{$i}-12 {
+      @include u-col($i, 12);
+    }
+
+    .u-move-#{$i}-12 {
+      @include u-move($i, 12);
+    }
+  }
+}
+
+// ----------------------------------------------------------------------------
+// Preset column classes for tablets (9, 10 and 12 columns)
+// ----------------------------------------------------------------------------
+
+@include mq-medium {
+  @for $i from 1 through 9 {
+    .u-col-#{$i}-9-m {
+      @include u-col($i, 9);
+    }
+
+    .u-move-#{$i}-9-m {
+      @include u-move($i, 9);
+    }
+  }
+
+  @for $i from 1 through 10 {
+    .u-col-#{$i}-10-m {
+      @include u-col($i, 10);
+    }
+
+    .u-move-#{$i}-10-m {
+      @include u-move($i, 10);
+    }
+  }
+
+  @for $i from 1 through 12 {
+    .u-col-#{$i}-12-m {
+      @include u-col($i, 12);
+    }
+
+    .u-move-#{$i}-12-m {
+      @include u-move($i, 12);
+    }
+  }
+}
+
+// ----------------------------------------------------------------------------
+// Preset column classes for widescreen (10 and 12 columns)
+// ----------------------------------------------------------------------------
+
+@include mq-wide {
+  @for $i from 1 through 10 {
+    .u-col-#{$i}-10-w {
+      @include u-col($i, 10);
+    }
+
+    .u-move-#{$i}-10-w {
+      @include u-move($i, 10);
+    }
+  }
+
+  @for $i from 1 through 12 {
+    .u-col-#{$i}-12-w {
+      @include u-col($i, 12);
+    }
+
+    .u-move-#{$i}-12-w {
+      @include u-move($i, 12);
+    }
+  }
+}
+
+// ----------------------------------------------------------------------------
+// Modifier to make the grid go from right to left
+// ----------------------------------------------------------------------------
+
+.u-grid--rtl {
+  > * {
+    float: right;
+  }
+}

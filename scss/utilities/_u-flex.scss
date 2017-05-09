@@ -1,0 +1,21 @@
+.u-flex {
+  display: flex;
+  width: 100%;
+
+  @include ie9 {
+    display: table;
+
+    > * {
+      display: table-cell;
+    }
+  }
+}
+
+.u-flex-1 {
+  flex: 1;
+
+  @include ie9 {
+    display: table-cell;
+    width: 100%;
+  }
+}

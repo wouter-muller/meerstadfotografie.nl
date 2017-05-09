@@ -1,0 +1,72 @@
+// =================================================================
+// ALBUM LIST & DETAIL PAGE
+// =================================================================
+
+
+.photo-thumbnail {
+  background-color: darkgray;
+  position: relative;
+  overflow: hidden;
+
+  img {
+    @include center;
+    min-height: 100%;
+  }
+}
+
+.photo-thumbnail::after {
+  content: '';
+  display: block;
+  padding-bottom: 100%;
+}
+
+.photo-fullscreen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.photo-fullscreen img {
+  max-height: 100%;
+  max-width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.photo-fullscreen__close::before,
+.photo-fullscreen__next::before,
+.photo-fullscreen__previous::before {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  color: #fff;
+  font-size: 40px;
+  text-align: center;
+  line-height: 50px;
+  cursor: pointer;
+}
+
+.photo-fullscreen__close::before {
+  content: "x";
+  top: 20px;
+  right: 20px;
+
+}
+
+.photo-fullscreen__next::before {
+  content: ">";
+  top: 50%;
+  right: 20px;
+}
+
+.photo-fullscreen__previous::before {
+  content: "<";
+  top: 50%;
+  left: 20px;
+}
+

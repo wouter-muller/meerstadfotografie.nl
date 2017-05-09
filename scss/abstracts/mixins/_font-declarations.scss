@@ -1,0 +1,55 @@
+// ----------------------------------------------------------------------------
+// Preset font-sizes
+// ----------------------------------------------------------------------------
+
+@mixin font-size-xxxs {
+  font-size: 10px;
+  line-height: 1.2;
+}
+
+@mixin font-size-xxs {
+  font-size: 12px;
+  line-height: 1.25;
+}
+
+@mixin font-size-xs {
+  font-size: 13px;
+  line-height: 1.230769; // 16px
+}
+
+@mixin font-size-s {
+  font-size: 14px;
+  line-height: 1.2142857; // 17px
+}
+
+@mixin font-size-m {
+  font-size: 16px;
+  line-height: 1.25; // 20px
+}
+
+@mixin font-size-l {
+  font-size: 18px;
+  line-height: 1.1111111; // 20px
+}
+
+@mixin font-size-xl {
+  font-size: 24px;
+  line-height: 1.0416667; // 25px
+}
+
+@mixin font-size-xxl {
+  font-size: 36px;
+  line-height: 1.11111111; // 40px
+}
+
+// ----------------------------------------------------------------------------
+// Font-weights
+// ----------------------------------------------------------------------------
+
+@mixin font-weight-regular {
+  font-weight: 300;
+}
+
+@mixin font-weight-bold {
+  font-weight: 600;
+}

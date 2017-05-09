@@ -1,0 +1,27 @@
+.u-table {
+  display: table;
+  width: 100%;
+}
+
+.u-table-row {
+  display: table-row;
+}
+
+.u-table-cell {
+  display: table-cell;
+  vertical-align: top;
+
+  & + & {
+    padding-left: $gutter;
+  }
+}
+
+.u-table-horizontal-s {
+  tr,
+  th,
+  th {
+    @include mq-small {
+      display: block !important;
+    }
+  }
+}
