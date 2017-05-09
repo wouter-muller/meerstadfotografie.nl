@@ -13,8 +13,10 @@
 
         - @albums = [{ 'title' => 'Ballon Fiësta', 'path' => 'ballon-fiesta-september-2016',     'date' => 'September 2016' },
                      { 'title' => 'Uitkijktoren',  'path' => 'uitkijktoren-omgeving-maart-2017', 'date' => 'Maart 2017' },
+                     { 'title' => 'Algemeen',       'path' => 'meerstad-april-2017',              'date' => 'April 2017' },
                      { 'title' => 'Meeroevers',    'path' => 'meeroevers-april-2017',            'date' => 'April 2017' },
-                     { 'title' => 'Tersluis',      'path' => 'tersluis-april-2017',              'date' => 'April 2017' }]
+                     { 'title' => 'Tersluis',      'path' => 'tersluis-april-2017',              'date' => 'April 2017' },
+                     { 'title' => 'Uitkijktoren',  'path' => 'uitkijktoren-mei-2017',            'date' => 'Mei 2017' }]
 
         - @albums.each do |album|
           .u-col-3-12.u-col-1-2-s.u-col-4-12-m.u-col-2-10-w.u-margin-b
@@ -22,6 +24,4 @@
               .card__title #{album['title']}
               .card__date.u-margin-b #{album['date']}
               .card__image
-                %img{:alt => "", :src => "albums/#{album['path']}/1.jpg"}/
-
-
+                %img{:alt => "", :src => "albums/#{album['path']}/1.jpg"}

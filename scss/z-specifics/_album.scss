@@ -10,7 +10,8 @@
 
   img {
     @include center;
-    min-height: 100%;
+    height: 100%;
+    max-width: none; // override for global img tag
   }
 }
 
