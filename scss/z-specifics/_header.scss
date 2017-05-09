@@ -2,14 +2,7 @@
   padding: 15px 0;
   text-align: center;
   position: relative;
-
-  @at-root body.home & {
-    background-color: rgba(0, 0, 0, 0.5);
-  }
-
-  @at-root body.album-view & {
-    background-color: #222;
-  }
+  background-color: rgba(#222, 0.85);
 }
 
 .header .logo {
