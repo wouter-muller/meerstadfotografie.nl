@@ -9,12 +9,15 @@ a {
 }
 
 .home__hero {
-  background-image: url("../hero.jpg");
   background-position: center center;
   background-size: cover;
   height: 100%;
   position: fixed;
   width: 100%;
+
+  @include mq-small-medium {
+    background-image: url("../hero.jpg");
+  }
 }
 
 .card {
