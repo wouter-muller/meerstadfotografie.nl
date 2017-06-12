@@ -1,16 +1,16 @@
 !!!
 %html{:lang => "nl"}
   %head
-    = Haml::Engine.new(File.read('/partials/_head.haml')).render
+    = Haml::Engine.new(File.read('partials/_head.haml')).render
 
   %body.home
     .home__hero
-      %video.video.u-hide-s.u-hide-m{:autoplay => "autoplay", :loop => "loop", :muted => "", :poster => "video/3-poster.jpg"}
+      %video.video{:autoplay => "autoplay", :playsinline => "playsinline", :loop => "loop", :muted => "", :poster => "video/3-poster.jpg"}
         %source{:src => "video/3.mp4", :type => "video/mp4"}
         %source{:src => "video/3.webm", :type => "video/webm"}
 
 
-    = Haml::Engine.new(File.read('/partials/_header.haml')).render
+    = Haml::Engine.new(File.read('partials/_header.haml')).render
 
     .albums.u-wrapper
       .u-grid.u-grid-s.u-text-center
@@ -30,4 +30,4 @@
         -#      .card__image
         -#        %img{:alt => "", :src => "albums/#{album['path']}/1.jpg"}
 
-    = Haml::Engine.new(File.read('/partials/_end-of-body.haml')).render
+    = Haml::Engine.new(File.read('partials/_end-of-body.haml')).render
