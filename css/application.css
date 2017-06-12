@@ -1548,20 +1548,13 @@ body, html {
 a {
   text-decoration: none; }
 
-.home__hero {
-  background-position: center center;
-  background-size: cover;
-  height: 100%;
-  position: fixed;
-  width: 100%; }
-
 .card {
   background-color: rgba(255, 255, 255, 0.95);
   padding: 20px;
   box-shadow: 0 0 20px gray;
   display: block; }
   .card__title {
-    font-size: 24px; }
+    font-size: 20px; }
   .card__date {
     color: blue; }
   .card__image {

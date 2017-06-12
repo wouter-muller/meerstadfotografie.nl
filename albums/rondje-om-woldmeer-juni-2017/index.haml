@@ -10,7 +10,7 @@
       .u-grid.u-grid-s
 
         -# Set number of photos here
-        - (1..9).each do |i|
+        - (1..71).each do |i|
           .u-col-3-12.u-col-1-2-s.u-col-4-12-m.u-col-2-10-w.u-margin-b
             .photo-thumbnail
               %a{ href: "#", class: "js-thumbnail" , data: { id: "#{i}"} }
@@ -22,7 +22,7 @@
 
     :javascript
       $(function() {
-        $number = 9; // Set number of photos here
+        $number = 71; // Set number of photos here
       });
 
     %script{ src: "../../application.js" }

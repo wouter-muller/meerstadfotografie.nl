@@ -4,30 +4,31 @@
     = Haml::Engine.new(File.read('partials/_head.haml')).render
 
   %body.home
-    .home__hero
-      %video.video{:autoplay => "autoplay", :playsinline => "playsinline", :loop => "loop", :muted => "", :poster => "video/3-poster.jpg"}
-        %source{:src => "video/3.mp4", :type => "video/mp4"}
-        %source{:src => "video/3.webm", :type => "video/webm"}
+    %video.video{:autoplay => "autoplay", :playsinline => "playsinline", :loop => "loop", :muted => "", :poster => "video/3-poster.jpg"}
+      %source{:src => "video/3.mp4", :type => "video/mp4"}
+      %source{:src => "video/3.webm", :type => "video/webm"}
+
+    .home__arrow-down
+      %img{ :src => "arrow-down.svg" }
 
 
     = Haml::Engine.new(File.read('partials/_header.haml')).render
 
-    .albums.u-wrapper
+    .albums.u-wrapper{ style: "margin-top: 100vh" }
       .u-grid.u-grid-s.u-text-center
 
-        -# @albums = [{ 'title' => 'Ballon Fiesta', 'path' => 'ballon-fiesta-september-2016',     'date' => 'September 2016' },
-        -#           { 'title' => 'Uitkijktoren',  'path' => 'uitkijktoren-omgeving-maart-2017', 'date' => 'Maart 2017' },
-        -#           { 'title' => 'Algemeen',       'path' => 'meerstad-april-2017',              'date' => 'April 2017' },
-        -#           { 'title' => 'Meeroevers',    'path' => 'meeroevers-april-2017',            'date' => 'April 2017' },
-        -#           { 'title' => 'Tersluis',      'path' => 'tersluis-april-2017',              'date' => 'April 2017' },
-        -#           { 'title' => 'Uitkijktoren',  'path' => 'uitkijktoren-mei-2017',            'date' => 'Mei 2017' }]
+        - @albums = [{ 'title' => 'Rondje om het Woldmeer',     'path' => 'rondje-om-woldmeer-juni-2017',     'date' => 'Juni 2017',      'number' => '71' },
+        { 'title' => 'Tersluis',                   'path' => 'tersluis-april-2017',              'date' => 'April 2017',     'number' => '16' },
+        { 'title' => 'Meeroevers',                 'path' => 'meeroevers-april-2017',            'date' => 'April 2017',     'number' => '13' },
+        { 'title' => 'Uitkijktoren',               'path' => 'uitkijktoren-omgeving-maart-2017', 'date' => 'Maart 2017',     'number' => '9' },
+        { 'title' => 'Ballon Fiesta',              'path' => 'ballon-fiesta-september-2016',     'date' => 'September 2016', 'number' => '35' }]
 
-        -# @albums.each do |album|
-        -#  .u-col-3-12.u-col-1-2-s.u-col-4-12-m.u-col-2-10-w.u-margin-b
-        -#    %a.card{ :href => "albums/#{album['path']}" }
-        -#      .card__title #{album['title']}
-        -#      .card__date.u-margin-b #{album['date']}
-        -#      .card__image
-        -#        %img{:alt => "", :src => "albums/#{album['path']}/1.jpg"}
+        - @albums.each do |album|
+          .u-col-4-12.u-col-2-2-s.u-col-5-10-m.u-col-3-12-w.u-margin-b
+            %a.card{ :href => "albums/#{album['path']}" }
+              .card__title #{album['title']} (#{album['number']})
+              .card__date.u-margin-b #{album['date']}
+              .card__image
+                %img{:alt => "", :src => "albums/#{album['path']}/1.jpg"}
 
     = Haml::Engine.new(File.read('partials/_end-of-body.haml')).render
