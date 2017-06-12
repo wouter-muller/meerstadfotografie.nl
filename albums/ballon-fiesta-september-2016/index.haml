@@ -25,3 +25,5 @@
       });
 
     %script{ src: "../../application.js" }
+
+    = Haml::Engine.new(File.read('../../partials/_end-of-body.haml')).render
