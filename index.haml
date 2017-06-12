@@ -8,10 +8,6 @@
       %source{:src => "video/3.mp4", :type => "video/mp4"}
       %source{:src => "video/3.webm", :type => "video/webm"}
 
-    .home__arrow-down
-      %img{ :src => "arrow-down.svg" }
-
-
     = Haml::Engine.new(File.read('partials/_header.haml')).render
 
     .albums.u-wrapper{ style: "margin-top: 100vh" }
